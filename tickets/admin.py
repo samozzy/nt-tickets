@@ -231,6 +231,8 @@ class ShowAdmin(admin.ModelAdmin):
                 'location',
                 'category',
                 'poster',
+                'runtime',
+                'interval_number',
                 'description',
                 'long_description',
                 'warnings',
