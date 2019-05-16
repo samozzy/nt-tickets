@@ -50,9 +50,8 @@ class ShowSerializer(serializers.HyperlinkedModelSerializer):
             return obj.poster.poster_whatson.url
     
     class Meta:
-        model = models.Show
         fields = ('id', 'url', 'name', 'description', 
-            'location', 'description', 'long_description', 'long_markdown', 
+            'location', 'runtime', 'interval_number', 'description', 'long_description', 'long_markdown', 
             'start_date', 'end_date', 'is_current', 'poster', 'small_poster', 
             'warnings_technical', 'warnings_action', 'warnings_dialogue',
             'category', 'occurrence_set', 'show_sold_out')
